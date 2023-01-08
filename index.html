@@ -1,12 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Jean en progreso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/487dc59dcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portafolio Jean en Progreso</title>
 </head>
 <body>
+
+    <!-- Sección bavbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <img class="logoag" src="assets/img/arg-programa.png"
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <ul class="list-group list-group-horizontal">
+                  <a href="https://www.linkedin.com/in/jeanbracho/" target="_blank"><li class="list-group-item"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/jeanbrcho" target="_blank"><li class="list-group-item"><i class="fa-brands fa-square-github"></i></a>
+                  <a href="http://facebook.com" target="_blank"><li class="list-group-item"><i class="fa-brands fa-square-facebook"></i></a>
+                </ul>
+                <!-- Button trigger modal -->
+              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Iniciar Sesión
+              </button>
+              <span>- -</span>
+              <button type="button" class="btn btn-danger">Salir <i class="fa-sharp fa-solid fa-person-walking-dashed-line-arrow-right"></i></button>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- Sección Banner -->
+    <section>
+      <img class="banner" src="assets/img/planeta.jpeg" alt="imagen de la tierra" title="Planeta Tierra">
+    </section>
+
+    <!--Sección sobre mi-->
+    <section id="acerca">
+        <h2>Acerca de..</h2>
+        <img class="imgperfil" src="assets/img/dd2f2a99-b1ba-405a-9506-50a63ab686fb.jpg" alt="foto de perfil">
+        <span class="nombre">Jean Bracho</span>
+        <h2 class="titulo">Full Stack Developer Jr.</h2>
+       
+    <!-- <div>
+Imagen que lleva a un link en otra pagina
+        <a href="https://www.youtube.com/watch?v=eurOEmEnwyg" target="_blank">
+            <img src="assets/img/captura.png" alt="captura del codigo" title="captura de Visual Studio Code">
+        </a>
+    </div> -->
     
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nulla illum suscipit aliquam reprehenderit quibusdam vitae reiciendis minima deserunt enim. Dolorem labore blanditiis iure, eos cupiditate pariatur natus neque quibusdam.
+
+        </p>
+
+        <p><strong>Negrita</strong></p>
+        <p><strike>Tachado</strike></p>
+        <p><i>Cursiva</i></p>
+
+    </div>
+    </section>
+    
+    <!--Sección Experiencia-->
+    <section>
+        <h2>Experiencia</h2>
+    </section>
+
+    <!--Sección Educación-->
+    <section>
+        <h2>Educación</h2>
+    </section>
+
+    <!--Sección habilidades blandas y duras-->
+    <section>
+        <h2>Hard & Soft Skills</h2>
+    </section>
+
+    <!--Sección proyectos-->
+    <section>
+        <h2>Proyectos</h2>
+    </section>
+    
+    <!--Sección contacto-->
+    <section>
+        <h2>Contacto</h2>
+        <label for="">Enviame un mensaje:</label>
+        <!-- Salto de linea -->
+        <br>
+        <input type="text" placeholder="Acá escribe">
+        <button type="submit">Enviar</button>
+    </section>
+
+    <!--Esto es una linea-->
+<hr>
+    <!--Sección login-->
+    <section>
+        <h2>Inicio de Sesión</h2>
+        <label for="">Usuario:</label>
+        <input type="text" placeholder="Acá tu usuario">
+        <button type="submit">Enviar</button>
+
+        <label for="">Contraseña:</label>
+        <input type="password" placeholder="Acá tu contraseña">
+        <button type="submit">Enviar</button>
+    </section>
+
+    <!-- Modales -->
+    <!-- Modal login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar Sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

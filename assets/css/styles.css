@@ -1,0 +1,36 @@
+/* etiqueta html vadirectamente el nombre */
+/* clases va con "." adelante */
+/* ID va con # adelante */
+
+body {
+    background-color: rgb(180, 180, 180);
+}
+.banner {
+    display: block;
+    margin: auto;
+    border-radius: 2%;
+}
+
+.logoag{
+    height: 11%;
+    width: 11%;
+}
+
+li{
+    list-style-type: none;
+    margin-left: -3%;
+}
+
+.imgperfil{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.nombre{
+    font-size: 5rem;
+}
+
+.titulo{
+    font-size: 2rem;
+}
