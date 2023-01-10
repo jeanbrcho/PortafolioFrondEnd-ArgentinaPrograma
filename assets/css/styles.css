@@ -6,10 +6,35 @@ body {
     background-color: rgb(180, 180, 180);
 }
 .banner {
-    display: block;
-    margin: auto;
-    border-radius: 2%;
+    width:100%;
+    height:auto;
 }
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+.texto-encima{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.centrado{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centradobajo{
+    position: bottom;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
 
 .logoag{
     height: 11%;
@@ -23,8 +48,8 @@ li{
 
 .imgperfil{
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 
 .nombre{
@@ -32,5 +57,5 @@ li{
 }
 
 .titulo{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
