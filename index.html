@@ -14,7 +14,7 @@
     <!-- Sección bavbar -->
     <section id="navbar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <img class="logoag" src="assets/img/arg-programa.png"
+          <a href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="logoag" src="assets/img/arg-programa.png"></a>
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Inicio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,14 +75,35 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor dignissimos praesentium dolorem in quo, rem et quam neque, error hic sed ipsum est architecto fuga temporibus debitis incidunt! Illo, molestias.</p>
         </div> -->
       </div>
-       
+    </section>
+
+    <!-- Sección editar sobre -->
+    <section id="editarsobre" class="bg-dark mt-4 p-3">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#imgperfilModal">
+              Editar Imagen
+              </button>
+          </div>
+          <div class="col">
+            <button class="btn btn-light">Editar Nombre</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-light">Editar Informacíon</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <div>
 Imagen que lleva a un link en otra pagina
         <a href="https://www.youtube.com/watch?v=eurOEmEnwyg" target="_blank">
             <img src="assets/img/captura.png" alt="captura del codigo" title="captura de Visual Studio Code">
         </a>
     </div> -->
-    
+
     <!--Sección Experiencia-->
     <section>
         <h2>Experiencia</h2>
@@ -147,6 +168,35 @@ Imagen que lleva a un link en otra pagina
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+</div>
+
+ <!-- Modal imagen de perfil -->
+ <div class="modal fade" id="imgperfilModal" tabindex="-1" aria-labelledby="imgperfilLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="imgperfilLabel">Editar Imagen</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+        <form>
+          <div class="mb-3">
+            <label for="imgperfil" class="form-label">Editar Imagen</label>
+            <input type="url" placeholder="inserta URL de imagen" id="imgperfil" name="imgperfil" required>
           </div>
 
 
