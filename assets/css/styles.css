@@ -5,11 +5,20 @@
 body {
     background-color: rgb(180, 180, 180);
 }
+
+/* logo argentina programa de la navbar */
+.logoag{
+    height: 60%;
+    width: 60%;
+}
+
+/* Banner */
 .banner {
     width:100%;
     height:auto;
 }
 
+/* texto del banner */
 .contenedor{
     position: relative;
     display: inline-block;
@@ -34,32 +43,20 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-.logoag{
-    height: 60%;
-    width: 60%;
-}
-
-
-li{
-    list-style-type: none;
-    margin-left: -3%;
-}
-
+/* mi información de perfil */
 .imgperfil{
     border-radius: 100%;
     width: 100px;
     height: 100px;
 }
-
 .nombre{
     font-size: 4rem;
 }
-
 .titulo{
     font-size: 1rem;
 }
 
+/* logo de sección educación */
 #aplogo {
     filter: invert(100);
 }
